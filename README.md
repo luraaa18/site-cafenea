@@ -6,7 +6,7 @@ After Hours este un loc unde oamenii pot savura cafea, deserturi și timp petrec
 
 ## 🔗 Demo live
 
-👉 [Vezi site-ul aici](https://luraaa18.github.io/cafenea-after-hours/)
+👉 [Vezi site-ul aici](https://luraaa18.github.io/site-cafenea/)
 
 ## ✨ Funcționalități
 
@@ -45,7 +45,7 @@ cafenea-after-hours/
 
 1. Descarcă sau clonează repo-ul:
    ```
-   git clone https://github.com/luraaa18/cafenea-after-hours.git
+   git clone https://github.com/luraaa18/site-cafenea.git
    ```
 2. Deschide `index.html` în browser. Gata.
 
