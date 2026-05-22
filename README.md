@@ -64,7 +64,7 @@ Nu e nevoie de server sau de instalări — e un site static.
 
 ## 👤 Autor
 
-**Matei Laura-Jennifer** — Informatică, anul 2
+**Matei Laura-Jennifer** - Informatică, anul 2
 
 ---
 
