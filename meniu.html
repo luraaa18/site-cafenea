@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ro" data-theme="light" data-size="normal">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meniu - Cafeneaua After Hours</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="meniu">
+<header class="top">
+  <a class="logo" href="index.html"><span>☕</span> After Hours</a>
+  <nav class="nav" id="nav"><a href="index.html" data-page-link="acasa">Acasă</a><a href="meniu.html" data-page-link="meniu">Meniu</a><a href="rezervare.html" data-page-link="rezervare">Rezervare</a><a href="despre.html" data-page-link="despre">Despre</a><a href="contact.html" data-page-link="contact">Contact</a></nav>
+  <div class="tools">
+    <button id="helpBtn" type="button">Ajutor</button>
+    <button id="settingsBtn" type="button">Setări</button>
+    <button id="menuBtn" type="button">☰</button>
+  </div>
+</header>
+<main>
+
+<section class="section">
+  <h1>Meniu</h1>
+  <p class="lead">Descoperă băuturile și deserturile disponibile în cafeneaua After Hours.</p>
+  <button class="btn" id="resetOrders">Resetează comenzile</button>
+  <h2>Cafele</h2>
+  <div class="menu-grid">
+    <article class="item" data-id="espresso"><div><h3>Espresso</h3><p>Shot scurt și intens.</p></div><b>9 lei</b><button class="small-btn">Comandă</button><span class="count">0 comenzi</span></article>
+    <article class="item" data-id="cappuccino"><div><h3>Cappuccino</h3><p>Espresso cu lapte și spumă.</p></div><b>14 lei</b><button class="small-btn">Comandă</button><span class="count">0 comenzi</span></article>
+    <article class="item" data-id="latte"><div><h3>Latte</h3><p>Cafea cremoasă cu lapte.</p></div><b>16 lei</b><button class="small-btn">Comandă</button><span class="count">0 comenzi</span></article>
+  </div>
+  <h2>Deserturi</h2>
+  <div class="menu-grid">
+    <article class="item" data-id="cheesecake"><div><h3>Cheesecake</h3><p>Cu fructe de sezon.</p></div><b>19 lei</b><button class="small-btn">Comandă</button><span class="count">0 comenzi</span></article>
+    <article class="item" data-id="croissant"><div><h3>Croissant</h3><p>Copt dimineața.</p></div><b>10 lei</b><button class="small-btn">Comandă</button><span class="count">0 comenzi</span></article>
+    <article class="item" data-id="tiramisu"><div><h3>Tiramisu</h3><p>Cu cafea și cremă de mascarpone.</p></div><b>21 lei</b><button class="small-btn">Comandă</button><span class="count">0 comenzi</span></article>
+  </div>
+</section>
+
+</main>
+<footer>
+  <p>© 2026 Cafeneaua After Hours</p>
+  <p>Site făcut pentru proiect UI/UX.</p>
+  <p>Matei Laura-Jennifer - Informatică anul 2</p>
+</footer>
+<div class="overlay" id="overlay"></div>
+<section class="panel" id="settingsPanel" aria-hidden="true">
+  <button class="close" type="button" data-close="settingsPanel">x</button>
+  <h2>Setări aspect</h2>
+  <p>Alege cum vrei să arate site-ul.</p>
+  <button data-theme-btn="light" type="button">Light mode</button>
+  <button data-theme-btn="dark" type="button">Dark mode</button>
+  <button data-size-btn="normal" type="button">Text normal</button>
+  <button data-size-btn="mare" type="button">Text mare</button>
+</section>
+<section class="panel" id="helpPanel" aria-hidden="true">
+  <button class="close" type="button" data-close="helpPanel">x</button>
+  <h2>Ajutor</h2>
+<p><b>Cum fac o rezervare?</b><br>
+Completează formularul din pagina „Rezervare”.</p>
+
+<p><b>Care este programul cafenelei?</b><br>
+Suntem deschiși zilnic între 08:00 și 22:00.</p>
+
+<p><b>Pot modifica aspectul site-ului?</b><br>
+Da, poți schimba culorile și tema din butonul de personalizare.</p>
+
+<p><b>Unde găsesc datele de contact?</b><br>
+În pagina „Contact”.</p></section>
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>

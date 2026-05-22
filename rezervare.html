@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ro" data-theme="light" data-size="normal">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rezervare - Cafeneaua After Hours</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="rezervare">
+<header class="top">
+  <a class="logo" href="index.html"><span>☕</span> After Hours</a>
+  <nav class="nav" id="nav"><a href="index.html" data-page-link="acasa">Acasă</a><a href="meniu.html" data-page-link="meniu">Meniu</a><a href="rezervare.html" data-page-link="rezervare">Rezervare</a><a href="despre.html" data-page-link="despre">Despre</a><a href="contact.html" data-page-link="contact">Contact</a></nav>
+  <div class="tools">
+    <button id="helpBtn" type="button">Ajutor</button>
+    <button id="settingsBtn" type="button">Setări</button>
+    <button id="menuBtn" type="button">☰</button>
+  </div>
+</header>
+<main>
+
+<section class="section narrow">
+  <h1>Rezervă o masă</h1>
+  <p class="lead">Câmpurile marcate cu * sunt obligatorii.</p>
+  <form class="form" data-form="rezervare">
+    <label>Nume *<input name="nume" data-rule="name" placeholder="ex: Ana Popescu"></label>
+    <label>Email *<input name="email" data-rule="email" placeholder="ex: ana@email.ro"></label>
+    <label>Telefon *<input name="telefon" data-rule="phone" placeholder="07xxxxxxxx"></label>
+    <label>Data *<input type="date" name="data" data-rule="date"></label>
+    <label>Ora *<select name="ora" data-rule="select"><option value="">Alege ora</option><option>09:00</option><option>10:00</option><option>11:00</option><option>12:00</option><option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option><option>18:00</option><option>19:00</option><option>20:00</option><option>21:00</option></select></label>
+    <label>Persoane *<input type="number" name="persoane" min="1" max="20" data-rule="guests" placeholder="2"></label>
+    <label>Observații<textarea name="obs" placeholder="ex: masă lângă geam"></textarea></label>
+    <button class="btn main" type="submit">Trimite rezervarea</button>
+    <p class="form-result" aria-live="polite"></p>
+  </form>
+</section>
+
+</main>
+<footer>
+  <p>© 2026 Cafeneaua After Hours</p>
+  <p>Site făcut pentru proiect UI/UX.</p>
+  <p>Matei Laura-Jennifer - Informatică anul 2</p>
+</footer>
+<div class="overlay" id="overlay"></div>
+<section class="panel" id="settingsPanel" aria-hidden="true">
+  <button class="close" type="button" data-close="settingsPanel">x</button>
+  <h2>Setări aspect</h2>
+  <p>Alege cum vrei să arate site-ul.</p>
+  <button data-theme-btn="light" type="button">Light mode</button>
+  <button data-theme-btn="dark" type="button">Dark mode</button>
+  <button data-size-btn="normal" type="button">Text normal</button>
+  <button data-size-btn="mare" type="button">Text mare</button>
+</section>
+<section class="panel" id="helpPanel" aria-hidden="true">
+  <button class="close" type="button" data-close="helpPanel">x</button>
+  <h2>Ajutor</h2>
+<p><b>Cum fac o rezervare?</b><br>
+Completează formularul din pagina „Rezervare”.</p>
+
+<p><b>Care este programul cafenelei?</b><br>
+Suntem deschiși zilnic între 08:00 și 22:00.</p>
+
+<p><b>Pot modifica aspectul site-ului?</b><br>
+Da, poți schimba culorile și tema din butonul de personalizare.</p>
+
+<p><b>Unde găsesc datele de contact?</b><br>
+În pagina „Contact”.</p></section>
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>

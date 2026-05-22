@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ro" data-theme="light" data-size="normal">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Acasă - Cafeneaua After Hours</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="acasa">
+<header class="top">
+  <a class="logo" href="index.html"><span>☕</span> After Hours</a>
+  <nav class="nav" id="nav"><a href="index.html" data-page-link="acasa">Acasă</a><a href="meniu.html" data-page-link="meniu">Meniu</a><a href="rezervare.html" data-page-link="rezervare">Rezervare</a><a href="despre.html" data-page-link="despre">Despre</a><a href="contact.html" data-page-link="contact">Contact</a></nav>
+  <div class="tools">
+    <button id="helpBtn" type="button">Ajutor</button>
+    <button id="settingsBtn" type="button">Setări</button>
+    <button id="menuBtn" type="button">☰</button>
+  </div>
+</header>
+<main>
+
+<section class="hero">
+  <div>
+    <p class="tag">deschis zilnic 8:00 - 22:00</p>
+    <h1>Cafea bună, loc liniștit și rezervare rapidă</h1>
+    <p class="lead">After Hours este o cafenea modernă și relaxantă, creată pentru oamenii care vor să se bucure de cafea bună, deserturi de casă și o atmosferă liniștită. Localul oferă băuturi pe bază de cafea, ceaiuri și gustări dulci, într-un spațiu confortabil potrivit atât pentru întâlniri cu prietenii, cât și pentru studiu sau lucru.</p>
+    <div class="actions">
+      <a class="btn main" href="rezervare.html">Rezervă o masă</a>
+      <a class="btn" href="meniu.html">Vezi meniul</a>
+    </div>
+  </div>
+  <div class="box hero-box">
+    <div class="big-icon">☕</div>
+    <h2>Ce găsești aici</h2>
+    <ul class="check-list">
+      <li>cafea bună și deserturi de casă</li>
+      <li>muzică relaxantă</li>
+      <li>spațiu confortabil</li>
+      <li>atmosferă prietenoasă</li>
+    </ul>
+  </div>
+</section>
+<section class="section">
+  <h2>Pe scurt</h2>
+  <div class="cards">
+    <article class="card"><span>☕</span><h3>Cafea</h3><p>Espresso, cappuccino și latte pentru orice moment al zilei.</p></article>
+    <article class="card"><span>🍰</span><h3>Deserturi</h3><p>Prăjituri și croissante făcute în casă.</p></article>
+    <article class="card"><span>📱</span><h3>Contact</h3><p>Rezervări rapide și răspunsuri ușor de obținut. </p></article>
+  </div>
+</section>
+
+</main>
+<footer>
+  <p>© 2026 Cafeneaua After Hours</p>
+  <p>Site făcut pentru proiect UI/UX.</p>
+  <p>Matei Laura-Jennifer - Informatică anul 2</p>
+</footer>
+<div class="overlay" id="overlay"></div>
+<section class="panel" id="settingsPanel" aria-hidden="true">
+  <button class="close" type="button" data-close="settingsPanel">x</button>
+  <h2>Setări aspect</h2>
+  <p>Alege cum vrei să arate site-ul.</p>
+  <button data-theme-btn="light" type="button">Light mode</button>
+  <button data-theme-btn="dark" type="button">Dark mode</button>
+  <button data-size-btn="normal" type="button">Text normal</button>
+  <button data-size-btn="mare" type="button">Text mare</button>
+</section>
+<section class="panel" id="helpPanel" aria-hidden="true">
+  <button class="close" type="button" data-close="helpPanel">x</button>
+  <h2>Ajutor</h2>
+  <p><b>Cum fac o rezervare?</b><br>
+Completează formularul din pagina „Rezervare”.</p>
+
+<p><b>Care este programul cafenelei?</b><br>
+Suntem deschiși zilnic între 08:00 și 22:00.</p>
+
+<p><b>Pot modifica aspectul site-ului?</b><br>
+Da, poți schimba culorile și tema din butonul de personalizare.</p>
+
+<p><b>Unde găsesc datele de contact?</b><br>
+În pagina „Contact”.</p>
+</section>
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ro" data-theme="light" data-size="normal">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Despre - Cafeneaua After Hours</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="despre">
+<header class="top">
+  <a class="logo" href="index.html"><span>☕</span> After Hours</a>
+  <nav class="nav" id="nav"><a href="index.html" data-page-link="acasa">Acasă</a><a href="meniu.html" data-page-link="meniu">Meniu</a><a href="rezervare.html" data-page-link="rezervare">Rezervare</a><a href="despre.html" data-page-link="despre">Despre</a><a href="contact.html" data-page-link="contact">Contact</a></nav>
+  <div class="tools">
+    <button id="helpBtn" type="button">Ajutor</button>
+    <button id="settingsBtn" type="button">Setări</button>
+    <button id="menuBtn" type="button">☰</button>
+  </div>
+</header>
+<main>
+
+<section class="section">
+  <h1>Despre noi</h1>
+  <p class="lead">After Hours este un loc relaxant unde oamenii pot savura cafea, deserturi și timp petrecut cu prietenii într-o atmosferă liniștită.</p>
+  <div class="cards">
+    <article class="card"><span>⭐</span><h3>4.9/5</h3><p>Clienții apreciază atmosfera și cafeaua noastră.</p></article>
+    <article class="card"><span>📍</span><h3>Adresă</h3><p>Str. Teilor 14, Timișoara.</p></article>
+    <article class="card"><span>🕒</span><h3>Program</h3><p>Deschis zilnic între 08:00 și 22:00.</p></article>
+  </div>
+  <div class="box">
+    <h2>Atmosfera noastră</h2>
+    <p>Am creat un spațiu simplu și confortabil, potrivit pentru relaxare, studiu sau întâlniri.</p>
+  </div>
+</section>
+
+</main>
+<footer>
+  <p>© 2026 Cafeneaua After Hours</p>
+  <p>Site făcut pentru proiect UI/UX.</p>
+  <p>Matei Laura-Jennifer - Informatică anul 2</p>
+</footer>
+<div class="overlay" id="overlay"></div>
+<section class="panel" id="settingsPanel" aria-hidden="true">
+  <button class="close" type="button" data-close="settingsPanel">x</button>
+  <h2>Setări aspect</h2>
+  <p>Alege cum vrei să arate site-ul.</p>
+  <button data-theme-btn="light" type="button">Light mode</button>
+  <button data-theme-btn="dark" type="button">Dark mode</button>
+  <button data-size-btn="normal" type="button">Text normal</button>
+  <button data-size-btn="mare" type="button">Text mare</button>
+</section>
+<section class="panel" id="helpPanel" aria-hidden="true">
+  <button class="close" type="button" data-close="helpPanel">x</button>
+  <h2>Ajutor</h2>
+<p><b>Cum fac o rezervare?</b><br>
+Completează formularul din pagina „Rezervare”.</p>
+
+<p><b>Care este programul cafenelei?</b><br>
+Suntem deschiși zilnic între 08:00 și 22:00.</p>
+
+<p><b>Pot modifica aspectul site-ului?</b><br>
+Da, poți schimba culorile și tema din butonul de personalizare.</p>
+
+<p><b>Unde găsesc datele de contact?</b><br>
+În pagina „Contact”.</p></section>
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>

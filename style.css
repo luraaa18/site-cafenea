@@ -1,0 +1,65 @@
+*{box-sizing:border-box}
+:root{--bg:#f8efe4;--card:#fffaf3;--text:#34251d;--muted:#75655b;--accent:#b76e3f;--border:#e2cbb7;--bad:#b00020;--good:#26734d}
+html[data-theme="dark"]{--bg:#211a16;--card:#302720;--text:#f5eadf;--muted:#c7b6a8;--accent:#e0a06f;--border:#59473c;--bad:#ff8a8a;--good:#8ad6a6}
+html[data-size="mare"]{font-size:19px}
+body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.top{position:sticky;top:0;z-index:10;background:var(--card);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:15px;padding:14px 7%}
+.logo{font-size:1.4rem;font-weight:bold}
+.logo span{background:var(--accent);color:white;padding:8px;border-radius:10px;margin-right:6px}
+.nav{display:flex;gap:8px;flex-wrap:wrap}
+.nav a{padding:8px 12px;border-radius:20px;color:var(--muted);font-weight:bold}
+.nav a.active,.nav a:hover{background:var(--accent);color:white}
+.tools{display:flex;gap:7px}
+button,.btn{border:1px solid var(--border);background:var(--card);color:var(--text);padding:10px 16px;border-radius:12px;font-weight:bold;cursor:pointer}
+button:hover,.btn:hover{border-color:var(--accent)}
+.btn.main,.small-btn{background:var(--accent);color:white;border-color:var(--accent)}
+main{max-width:1100px;margin:auto;padding:35px 22px}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:25px;align-items:center;padding:25px 0}
+h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;margin:10px 0}
+h2{margin-top:35px}
+.lead{font-size:1.1rem;color:var(--muted);max-width:720px}
+.tag{display:inline-block;background:var(--card);border:1px solid var(--border);padding:8px 12px;border-radius:20px;color:var(--accent);font-weight:bold}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.box,.card,.item,.form{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:22px}
+.hero-box{text-align:center}
+.big-icon{font-size:5rem}
+.check-list{padding-left:22px;text-align:left}
+.section{padding:20px 0}
+.narrow{max-width:680px;margin:auto}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card span{font-size:2rem}
+.menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:25px}
+.item{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.item h3,.item p{margin:0}
+.item p,.count{color:var(--muted)}
+.item.popular{outline:3px solid color-mix(in srgb,var(--accent) 35%,transparent)}
+.small-btn{grid-column:1/2;width:max-content}
+.count{text-align:right}
+.form{display:grid;gap:14px}
+.form label{display:grid;gap:6px;font-weight:bold}
+input,select,textarea{width:100%;padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--bg);color:var(--text);font:inherit}
+textarea{min-height:110px;resize:vertical}
+.invalid input,.invalid select,.invalid textarea{border-color:var(--bad)}
+.error{color:var(--bad);font-size:.9rem}
+.form-result{font-weight:bold;color:var(--good)}
+.contact-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px}
+footer{text-align:center;color:var(--muted);border-top:1px solid var(--border);padding:25px}
+.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:20}
+.overlay.open{display:block}
+.panel{position:fixed;right:-360px;top:0;width:min(340px,90vw);height:100%;background:var(--card);border-left:1px solid var(--border);z-index:30;padding:25px;transition:.25s;box-shadow:0 0 30px rgba(0,0,0,.2)}
+.panel.open{right:0}
+.panel button{display:block;margin:10px 0;width:100%}
+.close{width:auto!important;margin-left:auto!important}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--text);color:var(--bg);padding:12px 18px;border-radius:20px;display:none;z-index:40}
+.toast.show{display:block}
+#menuBtn{display:none}
+@media(max-width:760px){
+  .top{align-items:flex-start}
+  #menuBtn{display:block}
+  .nav{display:none;position:absolute;left:0;right:0;top:66px;background:var(--card);padding:12px;border-bottom:1px solid var(--border)}
+  .nav.open{display:grid}
+  .hero,.cards,.menu-grid,.contact-layout{grid-template-columns:1fr}
+  .tools button{padding:8px 10px}
+  main{padding:25px 15px}
+}
